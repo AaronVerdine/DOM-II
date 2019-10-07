@@ -87,4 +87,17 @@ adventureImg.addEventListener('scroll', e => {
 
 let imgScale = 1;
 
+//  9) PointerOver
+const destImg = document.querySelector(".home .content-destination img");
 
+destImg.addEventListener('pointerover', e => {
+    alert('Pointer is over target!');
+})
+
+
+//  10) Click
+const funBtn = document.querySelector(".home .content-pick .destination .btn");
+
+funBtn.addEventListener('click', e => {
+    alert('Thanks for signing up!');
+})
