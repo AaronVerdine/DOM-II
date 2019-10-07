@@ -62,4 +62,29 @@ mapImg.addEventListener("wheel", e => {
 
 let scale = 1;
 
-const funBtn = document.addEventListener(".destination .btn");
+
+
+//  8) Scroll
+const adventureImg = document.querySelector(".home .content-section .img-content img");
+
+let lastPos = 0;
+let ticking = false;
+
+function doSomething(scroll_pos) {
+
+}
+
+adventureImg.addEventListener('scroll', e => {
+    scale += event.deltaY * -0.01;
+
+    // Restrict scale
+    scale = Math.min(Math.max(0.125, scale), 4);
+  
+    // Apply scale transform
+    mapImg.style.transform = `scale(${scale})`;
+  
+});
+
+let imgScale = 1;
+
+
